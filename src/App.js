@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+import MovingBackground from "./components/MovingBackground";
+import Router from "./Router";
 
 function App() {
+
+  const [theme, setTheme] = useState(true)
+
   return (
-    <div>
-      <h1>Hello, world!</h1>
-    </div>
+    <>
+      <MovingBackground theme={theme} />
+      <Router theme={theme} setTheme={setTheme} />
+    </>
   );
 }
 
