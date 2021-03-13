@@ -4,12 +4,13 @@ import Router from "./Router";
 
 function App() {
 
-  const [theme, setTheme] = useState(true)
+  const [theme, setTheme] = useState(true);
+  const [background, setBackground] = useState("ball");
 
   return (
     <>
-      <MovingBackground theme={theme} />
-      <Router theme={theme} setTheme={setTheme} />
+      <MovingBackground theme={theme} background={background} />
+      <Router theme={theme} setTheme={setTheme} setBackground={setBackground} />
     </>
   );
 }

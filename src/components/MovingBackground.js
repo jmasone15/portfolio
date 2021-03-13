@@ -1,7 +1,7 @@
 import React from "react";
 import ParticlesBg from "particles-bg";
 
-export default function MovingBackground({ theme }) {
+export default function MovingBackground({ theme, background }) {
 
     let color = ""
 
@@ -13,7 +13,7 @@ export default function MovingBackground({ theme }) {
 
     return (
         <div>
-            <ParticlesBg type="ball" bg={true} color={color} />
+            <ParticlesBg type={background} bg={true} color={color} />
         </div>
     )
 }
