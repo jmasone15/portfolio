@@ -1,17 +1,18 @@
 import React, { useState } from "react";
-import MovingBackground from "./components/MovingBackground";
+import Wrapper from "./components/Wrapper";
+import configs from "./components/backgroundConfig";
 import Router from "./Router";
 
 function App() {
 
   const [theme, setTheme] = useState(true);
-  const [background, setBackground] = useState("ball");
+  const [config, setConfig] = useState(configs.defaultConfig);
 
   return (
-    <>
-      <MovingBackground theme={theme} background={background} />
-      <Router theme={theme} setTheme={setTheme} setBackground={setBackground} />
-    </>
+    <div>
+      <Wrapper config={config} setConfig={setConfig} theme={theme} />
+      <Router theme={theme} setTheme={setTheme} setConfig={setConfig} />
+    </div>
   );
 }
 
