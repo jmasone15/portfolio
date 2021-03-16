@@ -1,5 +1,4 @@
 {
-  "homepage": "https://jmasone15.github.io/portfolio/",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -20,11 +19,11 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -44,5 +43,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "homepage": "https://jmasone15.github.io/portfolio/"
 }
