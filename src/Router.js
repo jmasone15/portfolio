@@ -9,7 +9,7 @@ export default function Router({ theme, setTheme, setConfig }) {
         <BrowserRouter>
             <NavBar theme={theme} setTheme={setTheme} setConfig={setConfig} />
             <Switch>
-                <Route exact path="/">
+                <Route path="/">
                     <HomePage theme={theme} />
                 </Route>
             </Switch>
