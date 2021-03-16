@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Wrapper from "./components/Wrapper";
-import configs from "./components/backgroundConfig";
+import configs from "./components/data/backgroundConfig";
 import Router from "./Router";
 
 function App() {

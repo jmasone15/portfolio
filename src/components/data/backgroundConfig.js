@@ -1,5 +1,3 @@
-
-
 const configs = {
     defaultConfig: {
         background: {
