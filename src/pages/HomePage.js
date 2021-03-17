@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import ProjectsCard from "../components/ProjectsCard";
 import Skills from "../components/Skills";
 import AboutMe from "../components/AboutMe";
+import picture from "../images/Profile Picture.jpg"
 
 export default function HomePage({ theme }) {
 
@@ -61,7 +62,7 @@ export default function HomePage({ theme }) {
                         <AboutMe theme={theme} />
                     </Col>
                     <Col sm={5}>
-                        <img alt="Jordan Masone" src="https://via.placeholder.com/350" />
+                        <img alt="Jordan Masone" src="http://www.simpleimageresizer.com/_uploads/photos/c094fbcc/Profile_Picture_350x350.jpg" />
                     </Col>
                 </Row>
             </Container>

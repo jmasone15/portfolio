@@ -2,7 +2,6 @@ import React from "react";
 import { Jumbotron, Row } from "react-bootstrap";
 import Avatar from '@material-ui/core/Avatar';
 import { makeStyles } from '@material-ui/core/styles';
-import picture from "../images/Profile Picture.jpg"
 
 
 const useStyles = makeStyles((theme) => ({
@@ -34,13 +33,6 @@ export default function Header({ theme }) {
                 <h4>Full-Stack Web Developer</h4>
             </Row>
             <br />
-            <Row style={{ justifyContent: "center" }}>
-                <Avatar alt="Jordan Masone" src={picture} className={classes.large} />
-            </Row>
-            <br /><br />
-            <Row style={{ justifyContent: "center" }}>
-                <h5>Welcome to my portfolio page!</h5>
-            </Row>
         </Jumbotron >
     )
 }
