@@ -6,6 +6,7 @@ import ProjectsCard from "../components/ProjectsCard";
 import Skills from "../components/Skills";
 import AboutMe from "../components/AboutMe";
 import picture from "../images/Profile Picture.jpg"
+import Badge from "../components/Badge";
 
 export default function HomePage({ theme }) {
 
@@ -62,7 +63,7 @@ export default function HomePage({ theme }) {
                         <AboutMe theme={theme} />
                     </Col>
                     <Col sm={5}>
-                        <img alt="Jordan Masone" src="http://www.simpleimageresizer.com/_uploads/photos/c094fbcc/Profile_Picture_350x350.jpg" />
+                        <img alt="Jordan Masone" src={"http://www.simpleimageresizer.com/_uploads/photos/c094fbcc/Profile_Picture_350x350.jpg"} />
                     </Col>
                 </Row>
             </Container>

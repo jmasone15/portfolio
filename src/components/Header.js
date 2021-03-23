@@ -1,6 +1,7 @@
 import React from "react";
 import { Jumbotron, Row } from "react-bootstrap";
 import Avatar from '@material-ui/core/Avatar';
+import Badge from "./Badge";
 import { makeStyles } from '@material-ui/core/styles';
 
 
@@ -25,12 +26,15 @@ export default function Header({ theme }) {
     const classes = useStyles();
 
     return (
-        <Jumbotron fluid style={theme ? lightStyle : darkStyle}>
+        <Jumbotron style={theme ? lightStyle : darkStyle}>
             <Row style={{ justifyContent: "center" }}>
                 <h1 style={{ fontSize: "75px" }}>Jordan Masone</h1>
             </Row>
             <Row style={{ justifyContent: "center" }}>
                 <h4>Full-Stack Web Developer</h4>
+            </Row>
+            <Row style={{ justifyContent: "center" }}>
+                <Badge />
             </Row>
             <br />
         </Jumbotron >
