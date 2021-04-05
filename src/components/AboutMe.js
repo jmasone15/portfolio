@@ -13,6 +13,8 @@ export default function AboutMe({ theme }) {
     const lightTextStyle = { color: "#000000" };
     const darkTextStyle = { color: "#ffffff" };
 
+    // Hopefully this works
+
     return (
         <Card style={theme ? lightStyle : darkStyle}>
             <CardActionArea>
