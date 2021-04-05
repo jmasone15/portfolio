@@ -6,7 +6,7 @@ import Router from "./Router";
 function App() {
 
   const [theme, setTheme] = useState(true);
-  const [config, setConfig] = useState(configs.defaultConfig);
+  const [config, setConfig] = useState(configs.catConfig);
 
   return (
     <div>
