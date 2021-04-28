@@ -2,6 +2,7 @@
 ## Full Stack Developer.
 
 This Portfolio was built with React to showcase the projects and information of Jordan Masone.
+[Deployed Site](https://jmasone15.github.io/portfolio/ "Portfolio")
 
 ### About Me
 
